@@ -1,0 +1,37 @@
+信息系统与数据库技术练习6答题卡
+
+班级： 信息管理一班    
+姓名：     陈正阳
+学号：     20190307139
+
+注：请将答案放置在序号下方。*/
+
+（一）
+1.CREATE DATABASE OnlineShop
+2.USE OnlineShop
+3.CREATE TABLE CustomerRelation
+(
+Id ubt PRIMARY KEY,
+Card char(18),
+Cname nVarChar(3),
+RgDate dateTime,
+Meanvalue numeric(12,2)
+)
+4.CREATE TABLE Books,
+(
+Bid CHAR(4) PRIMARY KEY,
+Bname VARCHAR(20) NOT NULL,
+Author VARCHAR(15),
+Publisher VARCHAR(30),
+PubkusgrDate dateTime,
+Price money(8);
+Discount decimal,
+Meanvalue numeric(3,2)
+)
+5.USE Master
+6.EXEC sp helpdb OnlineShop
+7.DROP DATABASE OnlineShop
+
+
+
+3
